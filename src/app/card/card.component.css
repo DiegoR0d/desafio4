@@ -1,0 +1,52 @@
+.example-card {
+  width: 200px;
+  /* display: flex;
+  justify-content: space-around; */
+
+}
+
+.cnt-card{
+  display: flex;
+  justify-content: space-around;
+}
+.cnt-card>div:first-child{
+  width: 18%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+
+}
+
+header{
+  background-color: yellow;
+}
+
+#arriba{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+#abajo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#buscar{
+  width: 300px;
+  height: 30px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+

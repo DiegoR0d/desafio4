@@ -1,0 +1,51 @@
+.cnt{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff159;
+}
+
+h1{
+text-align: center;
+}
+
+h2{
+color:orange
+}
+
+
+.mostrar{
+  margin-top: 40px;
+  width: 100%;
+  height: 700px;
+ background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen{
+  width: 65%;
+}
+
+.imagen > img{
+  width: 90%;
+  height: 90%;
+  text-align: center;
+}
+
+.datos{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(242, 242, 242)
+
+}
+
+.button{
+  width: 150px;
+  border-radius: 0.5em;
+  background-color: rgb(82, 82, 225);
+}

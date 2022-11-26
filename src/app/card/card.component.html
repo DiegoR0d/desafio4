@@ -1,0 +1,47 @@
+
+<header>
+  <nav>
+    <section id="arriba">
+      <div><img src="https://cdn.worldvectorlogo.com/logos/mercadolibre.svg" alt="mercado libre jpg " width="60px"></div>
+      <div><input type="text" placeholder="Buscar productos,marcas y mas..." id="buscar"></div>
+      <div><img src="https://http2.mlstatic.com/D_NQ_789074-MLA51377199768_092022-OO.webp" alt="envio express" width="340px"></div>
+    </section>
+    <section id="abajo">
+      <div id="primero">
+        <select name="categorias" id="">
+          <option value="categorias">categorias</option>
+        </select>
+      </div>
+      <div id="segundo">
+        <a href="">Historial</a>
+        <a href="">Tiendas oficiales</a>
+        <a href="">ofertas de la semana</a>
+        <a href="">vender </a>
+        <a href="">ayuda</a>
+      </div>
+      <div>
+
+        <a href="">crea tu cunta</a>
+        <a href="">ingresa</a>
+        <a href="">mis copras</a>
+
+      </div>
+    </section>
+  </nav>
+</header>
+
+<div class="cnt-card"  >
+  <div *ngFor="let productos of objeto">
+    <mat-card class="example-card"   >
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title routerLink="../descripcion/{{productos.id}}">{{ productos.nombre }}</mat-card-title>
+        <mat-card-subtitle >Precio:{{ productos.precio }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="productos.imgurl" alt="Photo of a Shiba Inu" height="300px"/>
+      <mat-card-content *ngIf="verde=='verde' ">
+        <p style="color: green;">Tipo de envio: {{ productos.envio }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+header{
+  background-color: yellow;
+}
+
+#arriba{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+#abajo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#buscar{
+  width: 300px;
+  height: 30px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
